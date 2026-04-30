@@ -1,0 +1,12 @@
+.todo {
+	margin-top: 40px;
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+}
+ul {
+	text-align: start;
+}
+li button {
+	margin-left: 50px;
+}
