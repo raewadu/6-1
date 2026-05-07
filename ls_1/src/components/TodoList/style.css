@@ -5,8 +5,11 @@
 	justify-content: center;
 }
 ul {
+	padding: 0;
 	text-align: start;
-}
-li button {
-	margin-left: 50px;
+	list-style: none;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	flex-direction: column;
 }
