@@ -28,7 +28,9 @@ const TodoList = () => {
 					value={text}
 					onChange={(e) => setText(e.target.value)}
 				/>
-				<Button onClick={add_todo_btn}>Добавить задачу</Button>
+				<Button onClick={add_todo_btn} type="primary">
+					Добавить задачу
+				</Button>
 			</div>
 			<ul>
 				{todos.map((item, index) => (
@@ -48,7 +50,11 @@ const TodoList = () => {
 							{item.text}
 						</Checkbox>
 
-						<Button onClick={() => dispatch(deleteTodo(item.id))}>
+						<Button
+							danger
+							type="primary"
+							onClick={() => dispatch(deleteTodo(item.id))}
+						>
 							Удалить
 						</Button>
 					</li>
